@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:text="This app saves a *single* location’s GPS coordinates for you to quickly navigate to via your default navigation app with the touch of a button. If you want to save multiple locations, check out the Multi Checkpoint app (also free).  "
+        android:id="@+id/textView2"
+        android:textStyle="bold|italic"
+        android:textSize="17sp" />
+</LinearLayout>

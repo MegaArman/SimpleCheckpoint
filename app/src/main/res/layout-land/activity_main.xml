@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/earthmap"
+    tools:context="arman.sc2.MainActivity">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="157dp"
+        android:layout_below="@+id/lastLocation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></LinearLayout>
+
+    <ToggleButton
+        android:background="@drawable/btn_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/saveToggle"
+        android:textOn="SAVING ON"
+        android:textOff="SAVING OFF"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAVIGATE"
+        android:id="@+id/navigateButton"
+        android:nestedScrollingEnabled="false"
+        android:onClick="navigateButtonOnClick"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE MY LOCATION"
+        android:id="@+id/saveButton"
+        android:nestedScrollingEnabled="false"
+        android:onClick="saveOnClick"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/lastLocation"
+        android:textSize="18sp"
+        android:textColor="#f6d44a"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
